@@ -29,4 +29,13 @@ body {
  body, html{
   
     font-family: 'Roboto Condensed', sans-serif;
+    
   }
+
+main.container{
+  width: 450px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #f3f3f3;
+  padding: 80px 2em;
+}

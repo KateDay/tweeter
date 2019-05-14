@@ -16,6 +16,9 @@
     <!-- NavBar CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
 
+    <!-- new tweet form -->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
@@ -33,41 +36,21 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <p>This is some content...</p>
-      <h1>No serisly!! CONTENT!!!!</h1>
-      <p>All I, all I, all I
-          Really, really, really
-          Wanna say, Is What the fuck today
-          All I, all I, all I
-          Really, really, really
-          Wanna do, Is grind up next to you
-          All Evergreen
-          No Histamine
-          All I, all I, all I
-          Really, really, really
-          Wanna do, is zag along with you
-          I got infinite ammunition
-          Coming out the Yin Yang
-          I got limitless stealth positions
-          Extract the champion
-          Extract the Champion
-          All I, all I, all I
-          Really, really, really
-          Wanna say, is junga lunga lay
-          All I, all I, all I
-          Really, really, really
-          Wanna do, is post up next to you
-          All trampoline
-          No Submarine
-          All I, all I, all I
-          Really, really, really
-          Wanna do, is bounce around with you
-          I got infinite ammunition
-          Coming out the Yin Yang
-          I got limitless stealth positions
-          Extract the champion
-          Extract the Champion</p>
+        <section class="new-tweet">
+            <h2>Compose Tweet</h2>
+            <form
+              action="/tweets"
+              method="POST">             
+              <textarea name="text" 
+                        placeholder="What are you humming about?"></textarea>
+              <input type="submit" 
+                      value="Tweet">
+              <span class="counter">140</span>
+            </form>
+          </section>
     </main>
+
+
 
   </body>
 </html>
