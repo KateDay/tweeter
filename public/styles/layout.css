@@ -15,11 +15,18 @@ html {
  */
 
 body {
+  position: relative;
   margin: 0;
   color: #244751;
   background-color: #eee;
-}
+
+  }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ body, html{
+  
+    font-family: 'Roboto Condensed', sans-serif;
+  }
