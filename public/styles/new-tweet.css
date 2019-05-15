@@ -20,8 +20,13 @@ h2 {
     border-bottom:1px solid black;
 }
 
-span.counter {
+.counter {
     float: right;
+
+}
+
+.counter.invalid{
+    color: red;
 }
 
 .form {

@@ -33,7 +33,7 @@ app.use("/tweets", tweetsRoutes);
 //     res.
 // });
 app.post("/new-tweet", (req, res) => {
-  let input = req.body
+  let input = req.body;
   res.redirect("/tweets");
 });
 

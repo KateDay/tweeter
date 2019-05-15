@@ -25,8 +25,8 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
 
-    <!-- character counting -->
-    <script type="text/javascript" src="/scripts/compser-char-counter.js"></script>
+    <!-- Input box character counting -->
+    <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
   <body>
@@ -44,11 +44,12 @@
             <form
               action="/new-tweet"
               method="POST">             
-              <textarea name="text" 
+              <textarea data-length=140
+                        name="text" 
                         placeholder="What are you humming about?"></textarea>
               <input type="submit" 
                       value="Tweet">
-              <span class="counter">140</span>cd
+              <span class="counter">140</span>
             </form>
           </section>
     </main>
