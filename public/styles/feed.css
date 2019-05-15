@@ -1,0 +1,60 @@
+article.feed {
+    display: inline-block;
+    width: 100%;
+    height: 200px;
+    border: solid 1px #c2bebee0;
+    margin: 10px auto;
+    border-radius: 8px 8px 0 0;
+    box-sizing: border-box;
+    opacity: .6;
+}
+
+article.feed:hover {
+    opacity: 1;
+}
+
+article.feed header {
+    width: 100%;
+    height: 75px;
+    background-color: #dcd8d8ee;
+    border-radius: inherit;   
+}
+
+article.feed .feedHead {    
+    display: inline-block;
+    padding: 10px;
+    margin: auto;  
+}
+
+article.feed header .handel {
+    float: right;
+    padding: 10px;
+    align-self: center;
+    font-size: .8em;
+}
+
+article.feed img {
+    float: left;
+    border-style: none;
+    height: 75px;
+    padding: 10px;
+}
+
+article.feed .feedContent {
+    display: inline-block;
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    line-height: 40px;
+}
+
+article.feed .feedFoot {
+    width: 100%;
+    height: 10px;
+    float: right;
+    margin: 0 auto 0;
+    border-top: solid 1px #dcd8d8ee;
+    padding: 10px;
+    font-size: .7em;
+}
