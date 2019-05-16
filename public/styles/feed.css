@@ -1,3 +1,8 @@
+#tweetsContainer {
+    margin-top: 250px; /*setting the container so it starts at
+    the bottom of the compose tweets box*/
+}
+
 article.feed {
     display: inline-block;
     width: 100%;
@@ -12,6 +17,15 @@ article.feed {
 article.feed:hover {
     opacity: 1;
 }
+
+
+article.feed img {
+    float: left;
+    border-style: none;
+    height: 75px;
+    padding: 10px;
+}
+
 
 article.feed header {
     width: 100%;
@@ -31,13 +45,6 @@ article.feed header .handel {
     padding: 10px;
     align-self: center;
     font-size: .8em;
-}
-
-article.feed img {
-    float: left;
-    border-style: none;
-    height: 75px;
-    padding: 10px;
 }
 
 article.feed .feedContent {
