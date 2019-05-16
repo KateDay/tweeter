@@ -27,7 +27,7 @@ module.exports = {
       userHandle += suffix;
     }
 
-    const avatarUrlPrefix = $("#profilepic").attr("src", `https://vanillicon.com/${md5(userHandle)}`);
+    const avatarUrlPrefix = `https://vanillicon.com/${md5(userHandle)}`;
     const avatars = {
       small:   `${avatarUrlPrefix}_50.png`,
       regular: `${avatarUrlPrefix}.png`,

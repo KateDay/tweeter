@@ -1,12 +1,12 @@
 #tweetsContainer {
-    margin-top: 250px; /*setting the container so it starts at
+    margin-top: 180px; /*setting the container so it starts at
     the bottom of the compose tweets box*/
 }
 
 article.feed {
     display: inline-block;
     width: 100%;
-    height: 200px;
+    height: auto;
     border: solid 1px #c2bebee0;
     margin: 10px auto;
     border-radius: 8px 8px 0 0;
@@ -49,19 +49,19 @@ article.feed header .handel {
 
 article.feed .feedContent {
     display: inline-block;
-    height: 80px;
     width: 100%;
     padding: 10px;
     margin: 0;
     line-height: 40px;
 }
 
-article.feed .feedFoot {
-    width: 100%;
-    height: 10px;
-    float: right;
-    margin: 0 auto 0;
+article.feed footer {
     border-top: solid 1px #dcd8d8ee;
     padding: 10px;
+    width: 100%;
+    float: right;
+}
+.feedFoot {
+    margin: 0 auto 0;
     font-size: .7em;
 }
