@@ -33,6 +33,7 @@ body, html{
   }
 
 main.container{
+  display: flexbox;
   width: 450px;
   min-height: 100vh;
   margin: 0 auto;
