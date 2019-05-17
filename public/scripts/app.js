@@ -43,21 +43,23 @@ function postTweet(event) {
         return alert("This Tweet is WAY too long!")
     }
     if(!input){
-        return alert("TELL ME YOUR STORY!")
+        return alert("Tell me your story!")
+    }
+    
+    const status = () => {
+        console.log("Got response");
+                loadTweets();
+                this.reset();
+                $('.counter').text(maxValue);
     }
 
     $.ajax({
         type: "POST",
         url: "/tweets",
         data: data,
-        success: function status(response){
-            console.log("Got response");
-        }
-    });
-
-    this.reset()
-
-    loadTweets();
+        success: status,
+        
+    });    
 }
 
 function loadTweets(){
@@ -71,7 +73,11 @@ function loadTweets(){
 
 $(document).ready(function(){
     loadTweets()
-
     $('form#composeTweet').on("submit", postTweet,)
+    
+    $(".toggleButton").click(function(){
+        $(".new-tweet").slideToggle()
+        $('textarea').focus();
+    });
 
 });

@@ -25,3 +25,27 @@
     font-size: 200%;    
     font-style: italic;
 }
+
+section.navStuff {
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+}
+
+section.navStuff .toggleButton {
+    color: #05443a;
+    padding: 10px;
+    float: right;
+    border: .5px solid black;
+    border-radius: 4px;
+    height: 60px;
+    width: 105px;
+    opacity: .6;
+}
+
+section.navStuff .toggleButton:hover {
+    opacity: 1;
+    background-color: #e8fdff;
+    color: black; 
+}
