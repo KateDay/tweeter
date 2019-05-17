@@ -40,10 +40,10 @@ function postTweet(event) {
 
 
     if (inputAmt > maxValue) {
-        return alert("This Tweet is WAY too long!")
+        return $(".errAlert").text("This Tweet is WAY too long!").slideDown()
     }
     if(!input){
-        return alert("Tell me your story!")
+        return $(".errAlert").text("Tell me your story!").slideDown()
     }
     
     const status = () => {
@@ -71,9 +71,19 @@ function loadTweets(){
 
 }
 
+function clearOut(){
+    const maxValue = $('textarea').data('length');
+    const counter = parseInt($(".counter").text());
+
+    if ( counter > 0 && counter < maxValue) {
+        $(".errAlert").text("").slideUp()
+    }
+}
+
 $(document).ready(function(){
     loadTweets()
-    $('form#composeTweet').on("submit", postTweet,)
+    $('form#composeTweet').on("submit", postTweet)
+    $('textarea').on("input", clearOut);
     
     $(".toggleButton").click(function(){
         $(".new-tweet").slideToggle()

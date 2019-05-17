@@ -22,15 +22,6 @@ h2 {
     border-bottom:1px solid black;
 }
 
-.counter {
-    float: right;
-
-}
-
-.counter.invalid{
-    color: red;
-}
-
 .form {
     padding: 2em;
     box-align: inline;
@@ -43,3 +34,25 @@ textarea {
     width: 100%;
 }
 
+.newTweetFoot{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.errAlert {
+    display: none;
+    font-size: 15px;
+    color: red;
+    margin: 0;
+    align-self: center;
+    
+}
+
+.counter {
+    float: right;
+}
+
+.counter.invalid{
+    color: red;
+}
