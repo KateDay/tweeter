@@ -10,6 +10,36 @@ function renderTweets(tweets) {
     });   
 }
 
+function formatTime (time) {
+    var diff = Math.floor((Date.now() - time) / 1000);
+    var interval = Math.floor(diff / 31536000);
+
+    if (interval >= 1) {
+        return interval + " years" + " ago";
+    }
+    interval = Math.floor(diff / 2592000);
+    if (interval >= 1) {
+        return interval + " months" + " ago";
+    }
+    interval = Math.floor(diff / 604800);
+    if (interval >= 1) {
+        return interval + " weeks" + " ago";
+    }
+    interval = Math.floor(diff / 86400);
+    if (interval >= 1) {
+        return interval + " days" + " ago";
+    }
+    interval = Math.floor(diff / 3600);
+    if (interval >= 1) {
+        return interval + " hours" + " ago";
+    }
+    interval = Math.floor(diff / 60);
+    if (interval >= 1) {
+        return interval + " minutes" + " ago";
+    }
+    return "<1m" + " ago";
+}
+
 function createTweetElement(data){
     var $tweet = $('<article>').addClass('feed');
 
@@ -22,7 +52,10 @@ function createTweetElement(data){
     var $content = $('<p>').addClass('feedContent').text(data.content.text);
 
     var $footer = $('<footer>');
-    var $contentDate = $('<p>').addClass('feedFoot').text(data.created_at);
+    // var $icon1 = $(<i class="fas fa-flag"></i>);
+    // var $icon2 = $(<i class="fas fa-retweet"></i>)
+    // var $icon3 = $(<i class="fas fa-heart"></i>)
+    var $contentDate = $('<p>').addClass('feedFoot').text(formatTime (data.created_at));
     $footer.append($contentDate);
 
     $tweet.append([$header, $content, $footer]);        
