@@ -52,11 +52,15 @@ function createTweetElement(data){
     var $content = $('<p>').addClass('feedContent').text(data.content.text);
 
     var $footer = $('<footer>');
-    // var $icon1 = $(<i class="fas fa-flag"></i>);
-    // var $icon2 = $(<i class="fas fa-retweet"></i>)
-    // var $icon3 = $(<i class="fas fa-heart"></i>)
+    
+    var $icons = $('<span>').addClass('icons');
+    var $icon1 = $('<i>').addClass('fas fa-flag');
+    var $icon2 = $('<i>').addClass('fas fa-retweet');
+    var $icon3 = $('<i>').addClass('fas fa-heart');
+    
     var $contentDate = $('<p>').addClass('feedFoot').text(formatTime (data.created_at));
-    $footer.append($contentDate);
+    
+    $footer.append([$icons.append([$icon1, $icon2, $icon3]), $contentDate]);
 
     $tweet.append([$header, $content, $footer]);        
     return $tweet;
