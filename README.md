@@ -1,17 +1,32 @@
 # Tweeter Project
 
-Tweeter is a simple, single-page Twitter clone.
+### Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express and MongoDB back-end skills.
+!["Welcome to Tweeter!"](https://github.com/KateDay/tweeter/blob/master/docs/Screenshot%20from%202019-05-18%2015-31-28.png?raw=true)
 
 ## Getting Started
 
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
+1. Install dependencies using the `npm install` command.
+2. Start the web server using the `npm run local` command.
+3. Go to <http://localhost:8080/> in your browser.
 
 ## Dependencies
 
 - Express
 - Node 5.10.x or above
+- mongodb 
+- chance
+- body-parser
+- md5
+
+## Screenshots!
+
+!["Read through the feed"](https://github.com/KateDay/tweeter/blob/master/docs/Screenshot%20from%202019-05-18%2015-28-36.png?raw=true)
+
+!["Add your own Tweets!"](https://github.com/KateDay/tweeter/blob/master/docs/Screenshot%20from%202019-05-18%2015-30-30.png?raw=true)
+
+
+## Enjoy!
+
+- Read through the feed, with easy to read highlighting so you never lose your spot!
+- Create content by clicking the "compose button", click compose again to minimize the box and read more content!
