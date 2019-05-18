@@ -20,10 +20,10 @@ module.exports = function makeDataHelpers(db) {
 
       db.collection("tweets").find().toArray(callback);
 
-      simulateDelay(() => {
-        const sortNewestFirst = (a, b) => a.created_at - b.created_at;
-        callback(null, db.tweets.sort(sortNewestFirst));
-      });
+      // simulateDelay(() => {
+      //   const sortNewestFirst = (a, b) => a.created_at - b.created_at;
+      //   callback(null, db.tweets.sort(sortNewestFirst));
+      // });
       //db.close();
     }
 
