@@ -57,8 +57,7 @@ function postTweet(event) {
         type: "POST",
         url: "/tweets",
         data: data,
-        success: status,
-        
+        success: status,        
     });    
 }
 
