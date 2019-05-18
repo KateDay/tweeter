@@ -19,7 +19,6 @@ body {
   margin: 0;
   color: #244751;
   background-color: #eee;
-
   }
 
 /*
@@ -27,13 +26,10 @@ body {
  */
 
 body, html{
-  
     font-family: 'Roboto Condensed', sans-serif;
-    
   }
 
 main.container{
-  display: flexbox;
   width: 450px;
   min-height: 100vh;
   margin: 0 auto;

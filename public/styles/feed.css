@@ -13,7 +13,6 @@ article.feed:hover {
     opacity: 1;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25), 
                 1px 2px 10px 0px rgba(0, 0, 0, 0.14);
-
 }
 
 article.feed:hover .icons {
@@ -26,7 +25,6 @@ article.feed img {
     height: 75px;
     padding: 10px;
 }
-
 
 article.feed header {
     width: 100%;
@@ -60,7 +58,7 @@ article.feed .feedContent {
 
 article.feed footer {
     border-top: solid 1px #dcd8d8ee;
-    padding: 10px;
+    padding: 4px 10px;
     width: 100%;
     float: right;
 }
@@ -68,10 +66,15 @@ article.feed footer {
 .icons {
     float: right;
     padding: 3px;
+    color: #00a087; 
     opacity: 0;
 }
 
+.fa, .fas {
+    padding: 0 2px;
+}
+
 .feedFoot {
-    margin: 0 auto 0;
+    margin: 6px auto 0;
     font-size: .7em;
 }

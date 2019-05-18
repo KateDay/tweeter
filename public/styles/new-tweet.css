@@ -1,9 +1,9 @@
 .new-tweet {
-    width: 386px;
+    width: 100%;
     padding: 10px;
     border: black;
     background-color: #dcd8d8;
-    margin: 0 auto;
+    margin: 0 auto 4px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-sizing: border-box;
