@@ -41,24 +41,23 @@ function formatTime (time) {
 }
 
 function createTweetElement(data){
-    var $tweet = $('<article>').addClass('feed');
+    const $tweet = $('<article>').addClass('feed');
 
-    var $header = $('<header>');
-    var $avatar = $('<img>').attr('src', data.user.avatars.small);
-    var $name = $('<h1>').addClass('feedHead').text(data.user.name);
-    var $handle = $('<p>').addClass('handel').text(data.user.handle);
+    const $header = $('<header>');
+    const $avatar = $('<img>').attr('src', data.user.avatars.small);
+    const $name = $('<h1>').addClass('feedHead').text(data.user.name);
+    const $handle = $('<p>').addClass('handel').text(data.user.handle);
     $header.append([$avatar, $name, $handle]);
 
-    var $content = $('<p>').addClass('feedContent').text(data.content.text);
+    const $content = $('<p>').addClass('feedContent').text(data.content.text);
 
-    var $footer = $('<footer>');
+    const $footer = $('<footer>');    
+    const $icons = $('<span>').addClass('icons');
+    const $icon1 = $('<i>').addClass('fas fa-flag');
+    const $icon2 = $('<i>').addClass('fas fa-retweet');
+    const $icon3 = $('<i>').addClass('fas fa-heart');
     
-    var $icons = $('<span>').addClass('icons');
-    var $icon1 = $('<i>').addClass('fas fa-flag');
-    var $icon2 = $('<i>').addClass('fas fa-retweet');
-    var $icon3 = $('<i>').addClass('fas fa-heart');
-    
-    var $contentDate = $('<p>').addClass('feedFoot').text(formatTime(data.created_at));
+    const $contentDate = $('<p>').addClass('feedFoot').text(formatTime(data.created_at));
     $footer.append([$icons.append([$icon1, $icon2, $icon3]), $contentDate]);
 
     $tweet.append([$header, $content, $footer]);        
@@ -124,5 +123,4 @@ $(document).ready(function(){
         $(".new-tweet").slideToggle()
         $('textarea').focus();
     });
-
 });
